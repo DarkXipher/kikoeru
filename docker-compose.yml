@@ -1,0 +1,16 @@
+# docker-compose.yml
+
+version: "3.9"
+services:
+  kikoeru:
+    build:
+      context: .
+    environment:
+      DB_SCHEMA: postgres
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      DB_HOST: postgres
+    ports:
+      - '3000:3000'
+    volumes:
+      - example_path:/home/ASMR
