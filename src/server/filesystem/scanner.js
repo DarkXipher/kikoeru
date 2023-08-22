@@ -1,7 +1,8 @@
 /* eslint-disable no-console */
 const fs = require('fs');
 const path = require('path');
-const fetch = require('node-fetch');
+//const fetch = require('node-fetch');
+import fetch from 'node-fetch';
 const db = require('../database/db');
 const { createSchema } = require('../database/schema');
 const scrapeWorkMetadata = require('../hvdb');
