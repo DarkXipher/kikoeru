@@ -12,6 +12,6 @@ services:
     ports:
       - '8008:8888'
     volumes:
-      - /media/storage2/ASMR:/mnt/Media/Voice
-      - /docker/kikoeru/db.sqlite3:/opt/app/db.sqlite3
+      - /media/storage2/ASMR/kikoeru:/mnt/Media/Voice:Z
+      - /docker/kikoeru/db.sqlite3:/opt/app/db.sqlite3:Z
 
