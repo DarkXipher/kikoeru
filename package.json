@@ -3,6 +3,7 @@
   "version": "<version>",
   "description": "Web media player, specifically for voice works.",
   "main": "src/server/index.jsx",
+  "type": "module",
   "scripts": {
     "build": "webpack --mode production",
     "start": "cross-env NODE_ENV=production node dist/server/index.js",
