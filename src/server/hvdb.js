@@ -64,7 +64,8 @@ const scrapeWorkMetadata = (id) => new Promise((resolve, reject) => {
               writeTo = 'tag.name';
             } else if (attrs.href.indexOf('CVWorks') !== -1) {
               work.vas.push({
-                id: hashNameIntoInt(attrs.href), // TODO: RESHNIX!!!
+                //id: hashNameIntoInt(attrs.href), // TODO: RESHNIX!!!
+                id: attrs.href.substring(attrs.href.lastIndexOf('/') + 1),
               });
               writeTo = 'va.name';
             }
